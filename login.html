@@ -12,19 +12,19 @@
       <input class="un " type="text" align="center" placeholder="Username">
       <input class="pass" type="password" align="center" placeholder="Password">
     
-      <a class="submit"  value="Login" onSubmit="validateForm()" align="center" href="web.html">Sign in</a>
-      <p class="forgot" align="center"><a href="Register.html">New Registeration</p>
+      <a class="submit" onSubmit="validateForm()" align="center" href="web.html">Sign in</a>
+      <p class="forgot" align="center" ><a href="Register.html">New Registeration</p>
       <p class="forgot" align="center"><a href="#">Forgot Password?</p>
   </form>
   
   <script>
       function validateForm() {
           var un = document.loginform.usr.value;
-          var pw = document.loginform.pword.value;
+          var pass = document.loginform.pword.value;
           var username = "username"; 
           var password = "password";
-          if ((un == username) && (pw == password)) {
-              window.location = "main.html";
+          if ((un == username) && (pass == password)) {
+              window.location = "main.html"
               return false;
           }
           else {
